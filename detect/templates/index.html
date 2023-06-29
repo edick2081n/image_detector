@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="." method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="загрузить картинку">
+<table border="1">
+    <tr><th colspan="2">результат</th> </tr>
+    <tr><td>ширина</td><td>{{ width }}</td></tr>
+    <tr><td>высота</td><td>{{ height }}</td></tr>
+    <tr><td>результат</td><td>{{ category_name }}</td></tr>
+</table>
+</form>
+</body>
+</html>
