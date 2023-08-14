@@ -4,3 +4,5 @@ venv/
 **/__pycache__/
 .idea/
 1.jpg
+core/config.py
+
